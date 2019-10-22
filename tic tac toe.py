@@ -59,7 +59,11 @@ def play_game(p1_name,p2_name,p1_symbol,p2_symbol):#main part that will call oth
                         replay()
                         break
                 turn+=1
-    
+                
+    if(turn==9):
+        print('its a tie!!')
+        replay()
+        
 def board_print(pos_list): #func to print boards
     clear_output()
     print(f'{pos_list[6]}   |   {pos_list[7]}   |   {pos_list[8]}   ')
